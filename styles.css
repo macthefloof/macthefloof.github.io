@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;500;600&display=swap');
+
+body {
+  background-color: black;
+}
+
+.main-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0rem;
+  text-align: center;
+}
+
+.main-container > .welcome-text {
+  color: white;
+  font-family: 'Chivo Mono', monospace;
+  font-size: clamp(3rem, 10vw, 10rem);
+  background: linear-gradient(128deg, rgba(151,129,225,1) 0%, rgba(151,129,225,1) 45%, rgba(225,184,129,1) 76%, rgba(68,40,162,1) 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
